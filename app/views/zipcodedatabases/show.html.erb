@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Zip:</strong>
+  <%= @zipcodedatabase.zip %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @zipcodedatabase.City %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @zipcodedatabase.state %>
+</p>
+
+<p>
+  <strong>Stateabb:</strong>
+  <%= @zipcodedatabase.StateAbb %>
+</p>
+
+<p>
+  <strong>County:</strong>
+  <%= @zipcodedatabase.county %>
+</p>
+
+<%= link_to 'Edit', edit_zipcodedatabase_path(@zipcodedatabase), class: "btn btn-link" %> |
+<%= link_to 'Back', zipcodedatabases_path, class: "btn btn-link" %>

@@ -1,0 +1,42 @@
+<%= form_with(model: zipcodedatabase, local: true) do |form| %>
+  <% if zipcodedatabase.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(zipcodedatabase.errors.count, "error") %> prohibited this zipcodedatabase from being saved:</h2>
+
+      <ul>
+      <% zipcodedatabase.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="form-group">
+    <%= form.label :zip %>
+    <%= form.text_field :zip, class: "form-control" %>
+  </div>
+
+  <div class="form-group">
+    <%= form.label :City %>
+    <%= form.text_field :City, class: "form-control" %>
+  </div>
+
+  <div class="form-group">
+    <%= form.label :state %>
+    <%= form.text_field :state, class: "form-control" %>
+  </div>
+
+  <div class="form-group">
+    <%= form.label :StateAbb %>
+    <%= form.text_field :StateAbb, class: "form-control" %>
+  </div>
+
+  <div class="form-group">
+    <%= form.label :county %>
+    <%= form.text_field :county, class: "form-control" %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit class: "btn btn-primary" %>
+  </div>
+<% end %>

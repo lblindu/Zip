@@ -1,0 +1,2 @@
+class Zipcodedatabase < ApplicationRecord
+end
